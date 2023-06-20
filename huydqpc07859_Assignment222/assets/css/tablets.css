@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('/assets/images/hinh-anh-gif.gif') top center /cover no-repeat;
+}
+
+.nav-wrap {
+    margin-bottom: 20px;
+}
+
+.menu-heading {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.menu-list {
+    width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.search {
+    padding: 14px 20px;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.search:hover {
+    opacity: .7;
+}
+
+.search:hover .input-search {
+    display: block;
+}
+
+.input-search {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    z-index: 1;
+    display: none;
+}
+
+.menu-item:hover>a {
+    opacity: 0.7;
+
+}
+
+.menu-item {
+    position: relative;
+}
+
+
+.menu-item>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 14px;
+    font-size: 20px;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    list-style-type: none;
+    background: url(../images/hinh-anh-gif.gif);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 200px;
+    display: none;
+    z-index: 1;
+    animation: fadeIn .3s linear;
+}
+
+.sub-menu-item {}
+
+.sub-menu-item a {
+    display: block;
+    color: white;
+    padding: 10px 14px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.sub-menu-item:hover a {
+    opacity: .7;
+}
+
+.background {
+    width: 100%;
+}
+
+.grid {
+    width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -6px;
+    margin-left: -6px;
+    padding-top: 12px;
+}
+
+.column-2 {
+    width: 200px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+
+.column-10 {
+    width: 1000px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.column {
+    width: 25%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.sub-menu-body {
+    list-style-type: none;
+    height: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    border-radius: 4px;
+}
+
+.sub-menu-body-item {}
+
+.sub-menu-body-item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 16px;
+    font-size: 20px;
+}
+
+.sub-menu-body-item:hover a {
+    color: #085341;
+}
+
+.sub-menu-body-item {}
+
+
+main{
+    height: 850px;
+}
+
+.product-heading {
+    margin-top: -9px;
+    margin-left: 6px;
+    text-align: center;
+    font-size: 24px;
+    padding: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    width: 99%;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-heading:hover .heading-list{
+    display: block
+}
+
+.heading-list{
+    list-style-type: none;
+    position: absolute;
+    background: url('../images/hinh-anh-gif.gif') center top /cover no-repeat;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    z-index: 1;
+    display: none;
+}
+
+.heading-item{
+    
+}
+
+
+.heading-item:hover a{
+    color: orangered
+}
+
+.heading-item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px;
+}
+
+
+
+
+
+.product {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    color: #085341;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-desc {
+    margin-bottom: 10px;
+}
+
+.product-desc-heading {
+    color: orange;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-color {}
+
+.product-price {
+    margin-bottom: 16px;
+}
+
+.price-desc {}
+
+.wrap-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-price {}
+
+.apple {
+    cursor: pointer;
+    color: orangered;
+}
+
+.apple:hover {
+    color: green;
+}
+
+.cart {
+    font-size: 14px;
+}
+
+.buy-now {
+    outline: none;
+    background: url('/assets/images/hinh-anh-gif.gif');
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    float: right;
+
+}
+
+.buy-now:hover {
+    opacity: .7;
+}
+
+
+.footer {
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 20px;
+    animation: changeColor 6s infinite;
+}
+
+@keyframes changeColor {
+    0%{
+        color: white;
+    }50%{
+        color: orangered;
+    }100%{
+        color: white;
+    }
+}

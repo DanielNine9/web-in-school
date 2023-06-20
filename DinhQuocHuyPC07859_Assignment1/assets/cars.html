@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon_io (1)/favicon.ico">
+    <link rel="stylesheet" href="fonts/themify-icons-font (2)/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="grid wide">
+            <div class="row">
+                <div class="column">
+                    <nav class="menu-nav">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item"><a href="cars.html">Cars</a></li>
+                            <li class="menu-item"><a href="">Contact</a></li>
+                            <li class="menu-item"><a href="">More <i class="menu-item-icon ti-angle-down"></i></a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu-item"><a href="">Hot</a>
+
+                                    </li>
+                                    <li class="sub-menu-item"><a href="">Best Seller</a></li>
+                                    <li class="sub-menu-item"><a href="">Cool</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="">Product</a></li>
+                        </ul>
+                        <i class="menu-list-icon ti-search">
+                            <div class="menu-search">
+                                <input class="menu-input" type="text" placeholder="Search Your Favorite Car">
+                            </div>
+                        </i>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="img">
+        <div class="slogan">
+            Lamborghini tractor. Totally different</div>
+
+        <div class="grid">
+            <div class="row">
+                <div class="column">
+                    <div class="collections-cars">
+                        <img src="img/lam.jpeg" alt="" class="img-car img-car-aventador">
+                        <img src="img/Revuelto.jpg" alt="" class="img-car img-car-revuelto">
+                        <img src="img/lambo.webp" alt="" class="img-car img-car-urus">
+                        <img src="img/lamboo.jpg" alt="" class="img-car img-car-veneno">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        const img = document.querySelector(".img-car-aventador");
+        const img1 = document.querySelector(".img-car-revuelto");
+        const img2 = document.querySelector(".img-car-urus");
+        const img3 = document.querySelector(".img-car-veneno");
+        const imgcars = document.querySelector(".img");
+        const collections = document.querySelector(".collections-cars");
+
+
+        img.onclick = () => {
+            imgcars.style.background = "url(\"/assets/img/lam.jpeg\") top center / cover no-repeat"
+            imgcars.style.paddingTop = "50%"
+        }
+        img1.onclick = () => {
+
+            imgcars.style.background = "url(\"/assets/img/revuelto.jpg\") top center / cover no-repeat"
+        }
+        img2.onclick = () => {
+            imgcars.style.background = 'url(\"/assets/img/lambo.webp\") top center / cover no-repeat'
+            imgcars.style.paddingTop = "40%"
+
+        }
+        img3.onclick = () => {
+
+            imgcars.style.background = 'url("/assets/img/lamboo.jpg") top center / cover no-repeat'
+            imgcars.style.paddingTop = "60%"
+
+        }
+
+      
+    </script>
+</body>
+
+</html>

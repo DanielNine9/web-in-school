@@ -1,0 +1,28 @@
+.menu-item{
+    position: relative;
+}
+
+.menu-item:hover .product-list{
+    display: block;
+}
+.product-list{
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 4px rgba(0, 0,0,.4);
+    list-style-type: none;
+    width: 200px;
+    display: none;
+    border-radius: 4px;
+}
+
+.product-item a{
+    display: block;
+    color: white;
+    padding: 12px;
+}
+
+.product-item:hover a{
+    opacity: .7;
+}

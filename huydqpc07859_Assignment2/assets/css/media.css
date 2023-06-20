@@ -1,0 +1,50 @@
+.menu-500 {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .menu-500 {
+        display: block;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header:hover nav {
+        display: block;
+    }
+
+    .menu-list {
+        position: absolute;
+        z-index: 111;
+        background: url('/assets/images/hinh-anh-gif.gif') center top /cover no-repeat;
+        flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        margin: 0;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+    }
+
+    .menu-list>li {
+        flex-basis: 100%;
+    }
+
+
+    .menu-item:first-child:hover~.menu-item {
+        filter: blur(5px);
+    }
+
+    .sub-memu-list {
+        position: absolute;
+        left: 120px;
+        top: 0;
+
+    }
+
+}

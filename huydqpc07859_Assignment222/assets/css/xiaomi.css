@@ -1,0 +1,17 @@
+.product{
+    padding: 0;
+}
+
+.product-desc-heading {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product-price{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.buy-now{
+    margin-right: 20px;
+}

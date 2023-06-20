@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.form-group{
+
+}
+
+.form-group .input{
+    width: 300px;
+}
+
+.form-group label{
+    display: block;
+    margin-top: 4px;
+}
+
+.form-group .favourite{
+    display: inline;
+}
+
+
+.form-group .gender{
+    display: inline-block;
+}

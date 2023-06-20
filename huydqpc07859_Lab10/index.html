@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label  for="name" class="myLabel">Họ và tên</label>
+            <input class="input" tabindex="1" type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="nation"class="myLabel">Quốc tịch</label>
+            <input class="input" id="nation"  type="text" readonly value="Việt Nam">
+        </div>
+        <div class="form-group">
+            <label class="myLabel" for="note">Ghi chú</label>
+            <textarea class="input" tabindex="2" mame="note" id="note" cols="38" rows="10"></textarea>
+        </div>
+        <hr />
+        <div class="form-group">
+            <button tabindex="3" class="form-button">Thêm</button>
+            <button tabindex="4" class="form-button">Sửa</button>
+            <button  class="form-button" disabled>Xóa</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

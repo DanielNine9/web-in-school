@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+.label{
+    display: block;
+}
+.rememberme{
+    display: inline-block;
+}
+input{
+    display: inline-block;
+}
+.remember{
+    padding: 0;
+    margin-top: 1000px;
+}
+.hr{
+    width: 200px;
+    margin: 10px 0;
+}

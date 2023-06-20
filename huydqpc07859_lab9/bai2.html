@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="username">Họ và tên</label>
+            <input class="input"type="text" id="username">
+        </div>
+        <div class="form-group">
+            <label class="gender">Giới tính</label>
+            <label class="gender" for="male">
+                <input type="radio" name="gender" id="male">
+                Nam
+            </label>
+            <label class="gender" for="female">
+                <input type="radio" name="gender" id="female">
+                Nữ
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="image">Chọn ảnh</label>
+            <input type="file" name="" id="image" accept="image/*">
+        </div>
+
+        <div class="form-group">
+            <label for="">Quốc tịch</label>
+            <select class="input"name="" id="quoctich">
+                <option value="United States">United States</option>
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Trung Quốc">Trung Quốc</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="" >
+                Sở thích
+            </label>
+            <input type="checkbox" name="thethao" id="thethao" class="checkbox">  <label class="favourite" for="thethao">Thể thao</label>
+            <input type="checkbox" name="dulich" id="dulich" class="checkbox"> <label class="favourite" for="dulich">Du lịch</label>
+            <input type="checkbox" name="amnhac" id="amnhac" class="checkbox"> <label class="favourite" for="amnhac">Âm nhạc</label>
+            <input type="checkbox" name="amthuc" id="amthuc" class="checkbox"> <label class="favourite" for="amthuc">Ẩm thực</label>
+        </div> <label for=""></label>
+
+        <div class="form-group">
+            <label for="textarea">Ghi chú</label>
+            <textarea class="input"name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <hr>
+        <input type="submit" value="Đăng ký">
+        <input type="submit" value="Nhập lại">
+    </form>
+
+</body>
+
+</html>

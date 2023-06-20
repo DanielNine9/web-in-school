@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai2.css">
+
+</head>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input class="input" type="text" name="name" id="name">
+        </div>
+
+        <div class="form-group">
+            <fieldset>
+                <legend>Giới tính</legend>
+                <input class="inline" type="radio" name="gender" id="male">
+                <label for="male">Nam</label>
+                <input class="inline" type="radio" name="gender" id="female">
+                <label for="female">Nữ</label>
+            </fieldset>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Ngày sinh</label>
+            <input class="input" type="date" name="date" id="date">
+        </div>
+
+        <div class="form-group">
+            <label for="gpa">Điểm</label>
+            <input class="input" type="number" name="gpa" value="0" min="0" max="10" step="0.25" id="gpa">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Nghề nghiệp</label>
+            <select class="input" id="job">
+                <option value="it" class="job-item">
+                    Lập trình viên
+                </option>
+                <option value="teacher" class="job-item">
+                    Giáo viên
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <fieldset>
+                <legend>Sở thích</legend>
+                <input class="inline" type="checkbox" name="thethao" id="favou-1">
+                <label for="favou-1">Thể thao</label>
+                <input class="inline" type="checkbox" name="dulich" id="favou-2">
+                <label for="favou-2">Du lịch</label>
+                <input class="inline" type="checkbox" name="amnhac" id="favou-3">
+                <label for="favou-3">Âm nhạc</label>
+                <input class="inline" type="checkbox" name="amthuc" id="favou-4">
+                <label for="favou-4">Ẩm thực</label>
+            </fieldset>
+        </div>
+
+        <div class="form-group">
+            <label for="note">Ghi chú</label>
+            <textarea class="input" name="note" id="note" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Đăng ký" id="button"></input>
+            <input type="submit" value="Nhập lại" id="button"></input>
+        </div>
+
+    </form>
+</body>
+
+</html>

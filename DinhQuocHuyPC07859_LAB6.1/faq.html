@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img{
+            width: 100%;
+            display: block;
+        }
+        .menu-list{
+            background: orangered;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            list-style-type: none;
+        }
+        .menu-item{
+            position: relative;
+            margin: 0 16px;
+        }
+        .menu-item>a{
+            text-decoration: none;
+            color: white;
+            display:block;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .menu-item>a:hover{
+            opacity: 0.7;
+        }
+        .body{
+            display: flex;
+            height: 500px
+        }
+        .article{
+            flex: 4;
+        }
+        .aside{
+            flex: 1;
+        }
+        .aside .nav-list{
+            list-style-type: none;
+            background: #d3d3d3;
+            height: 100%;
+            padding-left: 10px;
+        }
+        .aside .nav-list> .nav-item a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            line-height: 30px;
+            font-size: 20px;
+            
+        }
+        .aside .nav-list> .nav-item a:hover{
+            opacity: 0.7;
+        }
+        footer{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            background: #e1ffff;
+        }
+
+        .sub-menu {
+            position: absolute;
+            background: white;
+            top: 100%;
+            left: -22%;
+            width: 200px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+            animation: fadeIn .2s ease-in;
+            display: none;
+        }
+
+        .article{
+            padding: 0 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .menu-item:hover>.sub-menu {
+            display: block;
+
+        }
+
+        .sub-menu-item a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+            padding: 10px 10px;
+
+        }
+
+        @keyframes fadeIn {
+            0%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            }
+        }
+
+        .sub-menu-item:hover>a{
+            opacity: .7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/imgpoly.jpg" alt="" class="img">
+        </header>
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html">Trang chủ</a> </li>|
+                <li class="menu-item"><a href="about.html">Giới thiệu</a> </li>|
+                <li class="menu-item"><a href="contact.html">Liên hệ</a> </li>|
+                <li class="menu-item"><a href="feedback.html">Góp ý</a> </li>|
+                <li class="menu-item"><a href="faq.html">Hỏi đáp</a> </li>|
+                <li class="menu-item"><a href="">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item"><a href="laptop.html">Máy tính sách tay</a> </li>
+                        <li class="sub-menu-item"><a href="shopphone.html">Điện thoại di động</a> </li>
+                        <li class="sub-menu-item"><a href="mayquay.html">Máy quay phim</a> </li>
+                        <li class="sub-menu-item"><a href="camera.html">Máy chụp ảnh</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="body">
+            <article class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum nam voluptatem minima pariatur voluptas iste dolor libero dicta minus dignissimos perspiciatis sint quidem officia ab aliquam, magni hic eius.
+            Labore laboriosam perferendis alias cumque corporis. Quaerat vero tempore commodi accusamus soluta itaque provident asperiores officiis perferendis earum dolorum facilis, illum consequatur ipsa animi rem modi autem exercitationem repellendus ullam!
+            Veniam, error beatae delectus fugiat, nemo sequi consequuntur mollitia, nesciunt numquam unde provident libero deserunt! Veniam magnam blanditiis hic repellendus magni, amet cum ullam placeat veritatis rem quae? Consequatur, atque.
+            Fuga ab voluptatum debitis molestias possimus blanditiis quasi ea, modi, esse facilis laborum voluptas delectus laboriosam quod aspernatur distinctio aut libero impedit atque dicta, mollitia nam! Minima in ut iusto.
+            Molestias, eum obcaecati. Ratione vitae, commodi delectus quod, explicabo repellendus accusamus, provident aut neque dicta laboriosam. Tenetur facere blanditiis, quod sit deserunt, quibusdam, dolorum eligendi magni fuga architecto repudiandae unde.
+            Alias cum numquam, fugiat harum qui iusto assumenda tempora eligendi sunt beatae saepe ab tenetur molestiae quo, in quod, odio illo fuga deleniti. Provident aliquid magnam odio corporis qui dicta.
+            Earum natus quibusdam suscipit mollitia quas ullam sed facilis eligendi. Quas, beatae aliquam corporis molestiae nemo debitis dicta eius quidem explicabo nihil, enim quos maxime error deleniti doloremque, deserunt sapiente!
+            Molestiae eum maxime ducimus fugit similique culpa et, consequuntur velit iste voluptate quidem repellat expedita maiores, consectetur dignissimos veritatis ipsum nesciunt. Ex reprehenderit saepe repudiandae atque expedita molestias minima officia?
+            Doloremque ratione, nam, optio totam magni asperiores cumque sint repellendus animi ex veritatis non assumenda dolorem doloribus, accusamus fuga vel dolor vitae nemo dicta explicabo iure eum beatae qui? Corrupti.
+            Facilis sint ipsa impedit nostrum eos libero placeat, error porro natus magnam alias enim doloremque, asperiores accusantium vel reprehenderit voluptate dolorem quisquam magni iusto assumenda quas iste commodi! Vitae, quidem!
+            Inventore iste optio eveniet, error temporibus cum ipsum at molestias distinctio consequuntur, asperiores, animi laboriosam eos repudiandae aliquid! Facilis quod autem ullam sunt. Perspiciatis eveniet nulla cum sequi! Corporis, sed.
+            Reiciendis, eveniet. Sit earum sint ad odit impedit voluptatum atque dolor veritatis itaque voluptate sapiente facere perferendis corrupti, delectus vel? Ratione fugiat neque veniam qui iste sint ullam facilis dolores!
+            Accusamus, nesciunt, nobis dignissimos eveniet eos unde, quisquam necessitatibus culpa non recusandae neque. Eveniet recusandae laboriosam ab? Velit maxime eum voluptates impedit eveniet nostrum blanditiis omnis sunt excepturi! Consequuntur, ipsam.
+            Doloremque, consequatur laboriosam distinctio iure, quasi impedit iste necessitatibus amet, assumenda minima harum? Rem doloribus dolorum voluptates. Quae ut similique voluptate dolores, tempore ad neque natus minus quia placeat cumque.
+            Earum rem, temporibus, asperiores neque nihil expedita doloremque vero quaerat reiciendis quas natus quia, numquam quibusdam itaque totam deserunt eveniet culpa animi necessitatibus laborum dignissimos quasi? Veniam aut vitae sed.
+            Corrupti suscipit recusandae voluptatibus, vel assumenda itaque odio, iste laborum amet rem dignissimos. Ratione unde animi iste quae nostrum atque velit rerum, architecto deleniti, assumenda qui accusamus repudiandae. Quia, unde.
+            Laudantium sapiente doloribus magnam consectetur labore quisquam pariatur sed vel similique, distinctio, repellat corrupti unde voluptates sequi, voluptatem ab hic! Temporibus consequatur quisquam enim dolorum molestiae illum maxime et sit.
+            Nemo a unde officia! Blanditiis doloribus incidunt quae ad officia quisquam distinctio minus? Voluptate officia eos veniam minus quos dolore, obcaecati modi, similique porro optio, cum fugiat quisquam reiciendis sed?
+            Odit aliquid incidunt sunt provident labore placeat soluta quo voluptatum quam. Quas sapiente quos id temporibus. Alias, pariatur et asperiores aperiam unde error hic, consequatur expedita voluptatem necessitatibus, consectetur molestias?
+            Eveniet culpa recusandae accusantium excepturi adipisci libero consequuntur laboriosam voluptatem ex iure aliquam quod pariatur molestias illum aperiam, corrupti deleniti. Enim dicta nam sint. Sed animi repellendus quibusdam voluptatum mollitia.
+            Sit dicta aspernatur neque tempora molestiae sunt et perferendis, numquam quo consequuntur, ducimus quam explicabo possimus blanditiis minima, ratione esse? Veniam quo est nisi, perferendis dolore laboriosam doloribus incidunt at!
+            Ut, nobis dolorum reprehenderit nisi odit possimus placeat autem dicta aliquam similique iure beatae blanditiis magni nemo. Possimus, culpa, perferendis neque reprehenderit unde nostrum error deleniti, quidem sequi tenetur quod.</article>
+            <aside class="aside">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="laptop.html">Máy tính sách tay</a> </li>
+                    <li class="nav-item"><a href="shopphone.html">Điện thoại di động</a> </li>
+                    <li class="nav-item"><a href="mayquay.html">Máy quay phim</a> </li>
+                    <li class="nav-item"><a href="camera.html">Máy chụp ảnh</a> </li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            FPT POLYTECHNIC &#169; 2023. ALL RIGHTS RESERVED
+        </footer>
+    </div>
+</body>
+</html>

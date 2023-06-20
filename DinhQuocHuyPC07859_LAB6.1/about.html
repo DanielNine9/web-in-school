@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .img {
+            width: 100%;
+            display: block;
+        }
+
+        .menu-list {
+            background: orangered;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            list-style-type: none;
+        }
+
+        .menu-item {
+            position: relative;
+            margin: 0 16px;
+        }
+
+        .menu-item>a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        .menu-item>a:hover {
+            opacity: 0.7;
+        }
+
+        .body {
+            display: flex;
+            height: 500px
+        }
+
+        .article {
+            flex: 4;
+        }
+
+        .aside {
+            flex: 1;
+
+        }
+
+        .aside .nav-list {
+            list-style-type: none;
+            background: #d3d3d3;
+            height: 100%;
+            padding-left: 10px;
+        }
+
+        .aside .nav-list>.nav-item a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            line-height: 30px;
+            font-size: 20px;
+
+        }
+
+        .aside .nav-list>.nav-item a:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            background: #e1ffff;
+        }
+
+        .contact {
+            width: 300px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        .content-contact {
+            font-size: 18px;
+        }
+
+        
+
+        .sub-menu {
+            position: absolute;
+            background: white;
+            top: 100%;
+            left: -22%;
+            width: 200px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+            animation: fadeIn .2s ease-in;
+            display: none;
+        }
+
+        .article {
+            padding: 0 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .sub-menu {
+            position: absolute;
+            background: white;
+            top: 100%;
+            left: -22%;
+            width: 200px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+            animation: fadeIn .2s ease-in;
+            display: none;
+        }
+
+        .article{
+            padding: 0 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .menu-item:hover>.sub-menu {
+            display: block;
+
+        }
+
+        .sub-menu-item a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+            padding: 10px 10px;
+
+        }
+
+        @keyframes fadeIn {
+            0%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            }
+        }
+
+        .sub-menu-item:hover>a{
+            opacity: .7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/imgpoly.jpg" alt="" class="img">
+        </header>
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html">Trang chủ</a> </li>|
+                <li class="menu-item"><a href="about.html">Giới thiệu</a> </li>|
+                <li class="menu-item"><a href="contact.html">Liên hệ</a> </li>|
+                <li class="menu-item"><a href="feedback.html">Góp ý</a> </li>|
+                <li class="menu-item"><a href="faq.html">Hỏi đáp</a> </li>|
+                <li class="menu-item"><a href="">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item"><a href="laptop.html">Máy tính sách tay</a> </li>
+                        <li class="sub-menu-item"><a href="shopphone.html">Điện thoại di động</a> </li>
+                        <li class="sub-menu-item"><a href="mayquay.html">Máy quay phim</a> </li>
+                        <li class="sub-menu-item"><a href="camera.html">Máy chụp ảnh</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="body">
+            <article class="article">
+                <div>
+                    <img class="contact" src="img/contact.jpg" alt="contact jpg">
+                    <p class="content-contact">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate doloremque magnam harum!
+                        Mollitia deleniti sapiente voluptatem provident maxime ut quae quis voluptatibus cumque magni,
+                        vitae, enim exercitationem soluta quod quam!
+                        Blanditiis deserunt nostrum maiores ratione impedit voluptatum? Unde ducimus illum voluptatem,
+                        voluptatibus expedita molestiae mollitia laborum ratione sint minus rerum, temporibus,
+                        consectetur libero alias iusto sequi magni ad impedit accusantium.
+                        Accusamus exercitationem obcaecati possimus facilis inventore natus commodi laboriosam, delectus
+                        perspiciatis error praesentium labore dolorum repellendus pariatur quis vero. Maxime et itaque
+                        alias dolore enim praesentium. Voluptatum officia reprehenderit consectetur.
+                        Omnis eligendi accusantium hic pariatur porro exercitationem similique eum fugit explicabo velit
+                        mollitia, quidem dignissimos soluta amet odit iure officia reiciendis rem. Obcaecati soluta
+                        aliquam error laudantium quis voluptatem qui.
+                        Vero blanditiis delectus voluptatum quia cupiditate. Quo repudiandae sed officia quis deserunt!
+                        Cumque porro sequi voluptate omnis iusto, Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Natus tempora enim maiores, at esse deleniti doloribus corporis? Blanditiis id explicabo
+                        doloribus placeat quisquam ab distinctio maxime praesentium iste, quis debitis. Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Necessitatibus, officia veritatis suscipit facilis
+                        magni eligendi sit asperiores autem, sequi tenetur molestias quibusdam inventore odio cupiditate
+                        corrupti quia temporibus repellat aliquid?
+                        Tempore aut cupiditate adipisci quam iste nostrum deserunt, officiis maxime molestiae eaque.
+                        Labore velit magnam molestias at, ab ex nesciunt numquam, explicabo beatae voluptas reiciendis
+                        sunt rem distinctio, facilis placeat?
+                        Minus cum tempora deserunt maxime. Autem esse, iusto beatae accusantium asperiores
+                        necessitatibus nemo modi, ducimus dolorem quis ex commodi minima nulla quae quod eos officiis.
+                        Tempora quas nulla quisquam iusto.
+                        Neque, ab ut quibusdam necessitatibus ipsum dolorem id autem beatae dolores cumque obcaecati
+                        aliquam possimus dignissimos a, excepturi totam quae placeat. Maiores debitis minus totam ipsum
+                        sequi rem iure repudiandae! beatae vel eum, similique repellendus repudiandae quasi ab? Aut
+                        maiores rerum quidem.
+                    </p>
+                </div>
+            </article>
+            <aside class="aside">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="laptop.html">Máy tính sách tay</a> </li>
+                    <li class="nav-item"><a href="shopphone.html">Điện thoại di động</a> </li>
+                    <li class="nav-item"><a href="mayquay.html">Máy quay phim</a> </li>
+                    <li class="nav-item"><a href="camera.html">Máy chụp ảnh</a> </li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            FPT POLYTECHNIC &#169; 2023. ALL RIGHTS RESERVED
+        </footer>
+    </div>
+</body>
+
+</html>

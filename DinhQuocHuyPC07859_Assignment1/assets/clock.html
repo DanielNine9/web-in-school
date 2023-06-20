@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .clock-container {
+            margin: auto;
+            background: lightgreen;
+            width: 300px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .clock-display {
+            font-size: 70px;
+        }
+
+        .clock-button {
+            padding: 8px 16px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            outline: none;
+            border: 3px solid;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock-container">
+        <div class="clock-display">00:00:00
+        </div>
+        <button class="clock-button start">Start</button>
+        <button class="clock-button pause">Pause</button>
+        <button class="clock-button reset">Reset</button>
+    </div>
+    <script>
+        const display = document.querySelector(".clock-display");
+        const start = document.querySelector(".start");
+        const pause = document.querySelector(".pause")
+        const reset = document.querySelector(".reset")
+
+        let current = 0
+        let elapse = 0
+        let hrs = 0
+        let mins = 0
+        let secs = 0
+        
+        start.onclick = () => {
+            let date = new Date()
+            elapse = date.now()
+            
+        }
+
+    </script>
+</body>
+
+</html>

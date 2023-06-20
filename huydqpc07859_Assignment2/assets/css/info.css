@@ -1,0 +1,131 @@
+.info {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.info-left {
+    flex: 5;
+    margin-right: 60px;
+}
+
+.info-right {
+    flex: 4;
+}
+
+.info-left-heading,
+.info-right-heading {
+    background: #f7f7f7;
+    color: black;
+    font-size: 28px;
+    padding: 8px 10px;
+}
+
+.part1,
+.part2,
+.part3,
+.part4 {
+    margin: 16px 0;
+}
+
+.box-img {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 16px;
+}
+
+.img {
+    width: 100%;
+}
+
+.list-part-2 {
+    padding: 0 30px
+}
+
+.list-part-3 {
+    padding: 0 30px;
+}
+
+.ingredient-list {
+    list-style-type: none;
+}
+
+.ingredient-item:nth-child(2n) {
+    background: #f7f7f7;
+    color: black;
+}
+
+.ingredient-item {
+    padding: 6px 10px;
+    display: flex;
+}
+
+.desc {
+    min-width: 200px;
+}
+
+.brand {
+    color: #009c47;
+    cursor: pointer;
+}
+
+.brand:hover {
+    opacity: .7;
+}
+
+.user-manual {
+    color: #009c47;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.user-manual:hover {
+    opacity: .7;
+}
+
+
+.detail {
+    color: white;
+    outline: none;
+    background: #009c47;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.detail:hover {
+    opacity: .7;
+}
+
+.right {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.ti-clip {
+    color: black;
+}
+
+.wrap-detail {
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .info {
+        display: block;
+    }
+
+    * {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .info {
+        width: 800px;
+    }
+}
